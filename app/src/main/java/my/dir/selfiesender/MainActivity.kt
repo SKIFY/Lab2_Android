@@ -119,8 +119,8 @@ class MainActivity : AppCompatActivity() {
             val emailIntent = Intent(Intent.ACTION_SEND).apply {
                 type = "message/rfc822"
                 putExtra(Intent.EXTRA_EMAIL, arrayOf("hodovychenko@op.edu.ua"))
-                putExtra(Intent.EXTRA_SUBJECT, "ANDROID [Ваше Прізвище та Ім'я]")
-                putExtra(Intent.EXTRA_TEXT, "Посилання на репозиторій: [ваше посилання]")
+                putExtra(Intent.EXTRA_SUBJECT, "ANDROID Сніцаренко Іван")
+                putExtra(Intent.EXTRA_TEXT, "Посилання на репозиторій: https://github.com/SKIFY/Lab2_Android")
 
                 val file = File(currentPhotoPath)
                 if (file.exists()) {
